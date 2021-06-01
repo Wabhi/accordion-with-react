@@ -1,7 +1,14 @@
-/* .App {
+.App {
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
 }
-
+h2{
+  color: tomato;
+}
+/*
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -41,7 +48,8 @@ ol li {
   font-size: 22px;
   font-weight: 600;
   cursor: pointer;
-  display: block;
+  display: flex;
+  flex-direction: row;
 }
 ol {
   margin-top: -10px;

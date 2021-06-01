@@ -20,13 +20,14 @@ const useStyles = makeStyles((theme) => ({
 
 export default function Accodion() {
     const [expanded, setExpanded] = useState(false);
-    const handleChange = (panel) => (e,isExpanded) => {
+    const handleChange = (panel) => (e, isExpanded) => {
+        //console.log(isExpanded)
         setExpanded(isExpanded ? panel : false);
     };
   const classes = useStyles();
-
   return (
-    <div className={classes.root}>
+      <div className={classes.root}>
+      <h2>I AM ACCORDION</h2>
       <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
@@ -42,7 +43,7 @@ export default function Accodion() {
             <ol style={{ listStyle: "none" }}>
               <li>Add URL</li>
               <li>Your very own</li>
-              <li>Add photo</li>
+              <li>Add photo</li>         
             </ol>
           </Typography>
         </AccordionDetails>
